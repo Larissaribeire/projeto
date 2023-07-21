@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -78,7 +79,7 @@ body * {
   transform: translateY(-50%);
 }
 
-.light #switch button{
+.light #switch button {
   right: 0;
   left: initial;
 }
@@ -159,4 +160,15 @@ footer {
 #social-links a:hover {
   background: var(--highlight-color);
 
+}
+
+/* media querias */
+@media (min-widht: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop-.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
